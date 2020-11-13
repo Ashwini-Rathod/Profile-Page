@@ -1,0 +1,311 @@
+body{
+    margin: 0px;
+    padding: 0px;
+    font-family: sans-serif;
+}
+
+.bold{
+    font-weight: bold;
+}
+
+.banner{
+    background-image: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)), url(./lappy-5.jpeg);
+    width: 100%;
+    height: 100vh;
+    background-size: 100% 100%;
+   
+    
+}
+
+.name{
+    color: black;
+    text-align: center;
+    /*border: 1px solid black;*/
+    font-size: 22px;
+    
+}
+
+.sub-head-h1, .sub-head-h2{
+    margin: 15px;
+}
+
+.sub-head-h1{
+    font-size: 30px;
+}
+
+.sub-head-h2{
+    font-size: 25px;
+}
+
+
+.test{
+    background-color: black;
+    width: 90%;
+    margin: auto;
+    color: white;
+    text-align: center;
+    /* padding: 15px; */
+    display: none;
+}
+
+.utility-flex{
+    /* border: 3px solid black; */
+    background-color: transparent;
+    opacity: 0.8;
+    padding-top: 15px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+}
+
+.logo{
+    width: 80px;
+    height: 50px;
+    margin-left: 10px;
+   
+}
+
+.nav-container{
+    /*border:  1px solid blue;*/
+    margin-right: 15px;
+    
+}
+
+.download{
+    
+    padding: 10px;
+    color: white;
+    background-color: cornflowerblue;
+    /* border: 1px solid black; */
+    
+    padding-left: 15px;
+    padding-right: 15px;
+    
+}
+
+.hire-me{
+    padding: 10px;
+    color: white;
+    background-color: rgb(14, 212, 63);
+    /* border: 1px solid black; */
+    padding-left: 15px;
+    padding-right: 15px;
+}
+
+
+
+.button{
+    text-decoration: none;
+    color: white;
+    font-weight: bold;
+    
+    
+}
+
+.hire-me:hover, .download:hover{
+    padding: 12px;
+}
+
+/*.nav-class{
+    font-size: 18px;
+    font-weight: 12px;
+    padding: 5px;
+    text-decoration: none;
+    color: white;
+}*/
+
+/*.nav-class:hover{
+    color: silver;
+}*/
+
+.utility-topic{
+    width: 90%;
+    margin: auto;
+    text-align: center;
+    padding: 15px 0px 15px 0px;
+    background-color: cornflowerblue;
+    color: white;
+    font-weight: bold;
+    margin-bottom: 15px;
+}
+
+.topic{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 90%;
+    margin: auto;
+    border: 2px solid black;
+}
+
+.image{
+    width: 50%;
+}
+
+.image img{
+    width: 100%;
+    height: 100%;
+}
+
+.description{
+    width: 50%;
+    text-align: justify;
+    /*border: 2px solid black;*/
+}
+
+div .topic:nth-of-type(2n){
+    flex-direction: row-reverse;
+}
+
+.footer{
+    background-color: cornflowerblue;
+    color: black;
+    width: 100%;
+    /* height: 40vh; */
+    
+}
+
+.follow-me{
+    /* border: 2px solid white; */
+    padding-top: 25px;
+    text-align: center;
+}
+
+.sm{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.sm-a{
+    text-decoration: none;
+    color: black;
+    padding: 10px;
+}
+
+.sm-a:hover{
+    color: white;
+}
+
+.follow-me, .sm{
+    margin: 0px;
+}
+
+.cr{
+    text-align: center;
+    padding-bottom: 25px;
+}
+
+@media (max-width: 768px){
+    
+    div .topic:nth-of-type(2n){
+        flex-direction: row;
+    }
+
+    .topic{
+        flex-direction: column;
+    }
+
+    div .topic:nth-of-type(2n){
+        flex-direction: column;
+    }
+
+    .topic .description{
+         text-align: center;
+    }
+}
+
+@media (max-width: 350px){
+    .nav-container{
+        display: flex;
+        flex-direction: column;
+    }
+
+    .nav-container .download{
+        margin-bottom: 5px;
+        margin-top: 5px;
+    }
+
+    .utility-flex{
+        display: flex;
+        flex-direction: column;
+    }
+
+    .banner .utility-flex img{
+        margin-left: 0px;
+    }
+     
+    .test .sub-head-h1{
+        font-size: 20px;
+        text-align: start;
+    }
+
+    .test .sub-head-h2{
+        font-size: 10px;
+        text-align: start;
+    }
+
+}
+
+@media (max-width: 735px){
+    .name{
+     display: none;
+    }
+
+    .test{
+        display: block;
+        border: 2px solid white;
+        padding: 0px;
+    }
+
+}
+
+@media (max-width: 531px){
+    .name .sub-head-h1{
+        font-size: 20px;
+    }
+
+    .name .sub-head-h2{
+        font-size: 15px;
+    }
+
+    .topic{
+        justify-content: left;
+    }
+  
+    .topic .description{
+        align-self: flex-start;
+        /* justify-self: start; */
+        font-size: 12px;
+        
+    }
+    .utility-topic{
+        font-size: 15px;
+    }
+   
+}
+
+@media (max-width: 200px){
+
+
+    .topic .description{
+        
+        font-size: 10px;
+    }
+
+    .follow-me{
+        font-size: 15px;
+    }
+
+    .cr p{
+        font-size: 10px;
+    }
+}
+
+@media (max-width: 180px){
+    .topic .description{
+        font-size: 7px;
+    }
+}
+
